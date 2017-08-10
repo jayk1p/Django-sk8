@@ -1,0 +1,43 @@
+{% extends "home/header.html" %}
+<!-- This just means take this file (home.html) to header.html-->
+
+
+
+{% block content %}
+
+{% load static %}
+<div class="container text-center">
+  <h3> Skate </h3>
+  <p><em> Welcome </em></p>
+  <p> If you are trying to move up a level on your skateboarding, you have come to the right place </p>
+
+  <br>
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <a href="/tricktips/"> <p><strong> Trick Tips </strong></p> </a>
+      <br>
+      <a href="/tricktips/"><img src="{% static "home/img/tricktips.jpg" %}" class="responsive-img" alt="tricktips" style="width:100%"> </a>
+    </div>
+
+
+    <div class="col-sm-4">
+      <a href="/blog/"> <p><strong> Blog </strong></p></a>
+      <br>
+      <a href="/blog/"><img src="{% static "home/img/channels.jpg" %}" class="responsive-img" alt="channels" style="width:80%"> </a>
+
+    </div>
+
+    <div class="col-sm-4">
+      <a href="/contact/"> <p><strong> Contact </strong></p></a>
+      <br>
+      <a href="/contact/"><img src="{% static "home/img/contact.png" %}" class="responsive-img" alt="skate3" style="width:80%"></a>
+    </div>
+
+  </div>
+</div>
+
+
+
+{% endblock %}
